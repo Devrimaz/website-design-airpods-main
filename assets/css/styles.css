@@ -12,20 +12,20 @@
 /*Fuente y tipografia*/
 :root {
   --body-font: 'Roboto', sans-serif;
-  --biggest-font-size: 3.5rem;
-  --bigger-font-size: 2.25rem;
-  --big-font-size: 1.625rem;
-  --normal-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --biggest-font-size: 4.5rem;
+  --bigger-font-size: 3rem;
+  --big-font-size: 2.25rem;
+  --normal-font-size: 1.125rem;
+  --smaller-font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   :root {
-    --biggest-font-size: 8rem;
-    --bigger-font-size: 4.5rem;
-    --big-font-size: 2.5rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: 0.938rem;
+    --biggest-font-size: 10rem;
+    --bigger-font-size: 6rem;
+    --big-font-size: 3.5rem;
+    --normal-font-size: 1.25rem;
+    --smaller-font-size: 1.125rem;
   }
 }
 
@@ -135,6 +135,8 @@ img {
 
 .nav__link {
   color: var(--first-color);
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .nav__link:hover {
@@ -144,6 +146,7 @@ img {
 .nav__logo {
   color: var(--first-color);
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .nav__toggle {
@@ -159,8 +162,10 @@ img {
 .nav__btn {
   background-color: var(--second-color);
   color: var(--white-color);
-  padding: 0.375rem 1rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /*Aparecer menu*/
@@ -375,7 +380,8 @@ img {
         grid-template-columns: min-content;
     -ms-grid-rows: 80% 10%;
         grid-template-rows: 80% 10%;
-        grid-template-areas: "data img" "scroll scroll";
+        grid-template-areas: "data img"
+ "scroll scroll";
     -ms-flex-line-pack: end;
         align-content: flex-end;
     -webkit-box-pack: center;
